@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avenger@Movies</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="libary.js"></script>
+    <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+            #logo{
+            animation-name: logo;
+            animation-duration:5s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        @keyframes logo {
+            from{transform: rotate3d(0,1,0,0deg);}
+            to{transform: rotate3d(0,1,0,360deg);}
+           
+        }
+
+        .animate{
+            background: url(./avg\ logo2.jpg);
+            animation-name: avg;
+            animation-duration: 15s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-timing-function: step-end;      
+        }
+
+        @keyframes avg{
+            0%{
+                background: url(./avg\ logo2.jpg);
+                background-size: cover;
+            }
+            20%{
+                background: url(./avenger\ pic.jpg);
+                background-size: cover;
+            }
+            40%{
+                background: url(./avgageofultron.png);
+                background-size: cover;
+            }
+            60%{
+                background: url(./avgwarofinfinity.jpg);
+                background-size: cover;
+            }
+            80%{
+                background: url(./avgendgame.png);
+                background-size: cover;
+            }
+        }
+    </style>
+</head>
+<body class="container mx-auto font-['Oswald'] italic tracking-wider">
+  <!-- main -->
+  <div class="container mx-auto w-full h-auto bg-slate-400">
+<!-- navbar -->
+<div class="h-[100px] w-full bg-gray-700 flex items-center justify-between px-3 pr-5  text-white">
+  <div class="logo"><a href="./index.html"><img class="w-[120px] h-[100px] hover:transform hover:scale-90 " id="logo" src="./avg logo2transprant.png" alt=""></a></div>
+  <div class=" hidden lg:flex items-center gap-[35px]">
+      <a href="./index.html" class="hover:underline text-[20px]">Home</a>
+      <div class="flex gap-1 items-center cursor-pointer"><a href="./team main.html" class="hover:underline text-[20px]">Team</a><div class="text-[13px] pl-1" id="btn1"><i class="fa-solid fa-chevron-down"></i></div>
+  </div>
+      <a href="./Movies.html" class="hover:underline text-[20px]">Movies</a>
+      <a href="./Devil.html" class="hover:underline text-[20px]">Devil</a>
+      <a href="./News _ Updates.html" class="hover:underline text-[20px]">News & Updates</a>
+  </div>
+ <div class="flex gap-[20px] items-center">
+  <a href="Sign in.html"><button class="hover:bg-white hover:text-[#696b72] hover:transform hover:scale-105 text-[18px] w-[90px] h-[45px] skew-x-[-20deg] bg-[#696b72]">Log in</button></a>
+  <a href="Sign up.html"><button class="hover:bg-white hover:text-[#696b72] hover:transform hover:scale-105 text-[18px] w-[90px] h-[45px] skew-x-[-20deg] bg-[#696b72]">Sign up</button></a>
+  <button class="lg:hidden" id="btn"><i class="fa-solid fa-bars text-2xl"></i></button>
+ </div>
+</div>
+<!-- drop down menu for md sm -->
+<div class="container hidden h-auto  bg-black text-white flex-col mx-auto absolute" id="hid">
+    <a href="./index.html" class="p-3  hover:bg-gray-400 block border-b-2 border-b-white">Home</a>
+    <button class="p-3 text-start flex items-center hover:bg-gray-400 w-full border-b-2 border-b-white"><a href="./team main.html">Team</a><div class="text-[13px] pl-1" id="btn2"><i class="fa-solid fa-chevron-down"></i></div></button>
+    <ul class=" hidden  w-[150px] bg-gray-700 text-white flex-col " id="hid2">
+    <a href="./@boss.html" class="p-3  hover:bg-gray-900 block border-b-2 border-b-white"><li>Boss</li></a>
+    <a href="./@captain.html" class="p-3  hover:bg-gray-900 block border-b-2 border-b-white"><li>Captain</li></a>
+    <a href="./@ironman.html" class="p-3  hover:bg-gray-900 block border-b-2 border-b-white"><li>Ironman</li></a>
+    <a href="./@thor.html" class="p-3  hover:bg-gray-900 block border-b-2 border-b-white"><li>Thor</li></a>
+    <a href="./@hulk.html" class="p-3  hover:bg-gray-900 block border-b-2 border-b-white"><li>Hulk</li></a>      
+    <a href="./@blackwidow.html" class="p-3  hover:bg-gray-900 block border-b-2 border-b-white"><li>Black Widow</li></a>      
+    <a href="./@clintbarton.html" class="p-3  hover:bg-gray-900 block border-b-2 border-b-white"><li>Clint Barton</li></a>
+    
+    </ul>
+    <a href="./Movies.html" class="p-3  hover:bg-gray-400 block border-b-2 border-b-white">Movies</a>
+    <a href="./Devil.html" class="p-3  hover:bg-gray-400 block border-b-2 border-b-white">Devil</a>
+    <a href="./News _ Updates.html" class="p-3  hover:bg-gray-400 block border-b-2 border-b-white">News & Updates</a>
+</div>
+
+<!-- sub menu for lg -->
+<div class="container left-[450px] hidden w-[120px] h-[350px] bg-black text-white flex-col mx-auto absolute" id="hid1">
+<a href="./@boss.html" class="p-3  hover:bg-gray-400 block border-b-2 border-b-white">Boss</a>
+<a href="./@captain.html" class="p-3  hover:bg-gray-400 block border-b-2 border-b-white">Captain</a>
+<a href="./@ironman.html" class="p-3  hover:bg-gray-400 block border-b-2 border-b-white">Ironman</a>
+<a href="./@thor.html" class="p-3  hover:bg-gray-400 block border-b-2 border-b-white">Thor</a>
+<a href="./@hulk.html" class="p-3  hover:bg-gray-400 block border-b-2 border-b-white">Hulk</a>      
+<a href="./@blackwidow.html" class="p-3  hover:bg-gray-400 block border-b-2 border-b-white">Black Widow</a>      
+<a href="./@clintbarton.html" class="p-3  hover:bg-gray-400 block border-b-2 border-b-white">Clint Barton</a>    
+</div>
+
+<!-- landing page for home page -->
+<div class="animate mx-auto aspect-video"></div>
+
+<!-- Movie1 section -->
+    <div class="container mx-auto flex  py-10 md:flex-row flex-col items-center">
+      <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 flex justify-center">
+        <img class="object-cover object-center rounded h-[500px] hover:transform hover:scale-110 hover:shadow-2xl hover:shadow-white hover:transition-all" alt="hero" src="./movie1.jpg">
+      </div>
+      <div class="lg:flex-grow md:w-1/2 lg:pl-10 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900"><span class="font-extrabold text-4xl">1.</span>
+          2008's Iron Man
+        </h1>
+        <p class="mb-8 leading-relaxed lg:text-2xl md:text-sm">2008's Iron Man tells the story of Tony Stark, a billionaire industrialist and genius inventor who is kidnapped and forced to build a devastating weapon. Instead, using his intelligence and ingenuity, Tony builds a high-tech suit of armor and escapes captivity.It is the superhero persona of Anthony Edward "Tony" Stark, a businessman and engineer who runs the company Stark Industries. Beginning his career as a weapons manufacturer, he is captured in a war zone, and his heart is severely injured by shrapnel.Iron Man emphasizes loyalty, restitution and the responsible use of power by individuals and nations. But this superhero is not merely a Spider-Man clone. And that has a lot to do with his origin story.</p>
+      </div>
+    </div>  
+
+<!-- Movie2 section -->
+    <div class="container mx-auto flex py-10 md:flex-row flex-col items-center">
+      <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 flex justify-center">
+        <img class="object-cover object-center rounded h-[500px] hover:transform hover:scale-110 hover:shadow-2xl hover:shadow-white hover:transition-all" alt="hero" src="./movie2.jpeg">
+      </div>
+      <div class="lg:flex-grow md:w-1/2 lg:pl-10 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900"><span class="font-extrabold text-4xl">2.</span>
+            The Incredible Hulk
+        </h1>
+        <p class="mb-8 leading-relaxed lg:text-2xl md:text-sm">The Incredible Hulk's alter ego is nuclear scientist Robert Bruce Banner, inventor of the gamma bomb, who absorbed a vast quantity of gamma rays after risking his life to save a teenager. The Incredible Hulk embodies the darkest, angriest, and most antisocial aspects of Banner's personality.He is a gigantic, green, irradiated, mutated humanoid monster with incredible strength and an inability to control his rage. The Hulk is sometimes characterized as hyper-aggressive and brutal, other times as cunning, brilliant, and scheming. He is often portrayed as an antihero. the Hulk has been represented with other alter egos, from a mindless, destructive force, to a brilliant warrior, a self-hating protector</p>
+      </div>
+    </div>   
+    
+    
+<!-- Movie3 section -->
+<div class="container mx-auto flex py-10 md:flex-row flex-col items-center">
+    <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 flex justify-center">
+      <img class="object-cover object-center rounded h-[500px] hover:transform hover:scale-110 hover:shadow-2xl hover:shadow-white hover:transition-all" alt="hero" src="./movie3.jpeg">
+    </div>
+    <div class="lg:flex-grow md:w-1/2 lg:pl-10 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+      <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900"><span class="font-extrabold text-4xl">3.</span>
+          Iron Man 2
+      </h1>
+      <p class="mb-8 leading-relaxed lg:text-2xl md:text-sm">Six months after Iron Man, Tony Stark resists calls from the United States government to hand over the Iron Man technology, which is causing his declining health. Meanwhile, Russian scientist Ivan Vanko uses his own version of the technology to pursue a vendetta against the Stark family.Iron Man 2 is a 2010 American superhero film based on the Marvel Comics character Iron Man, produced by Marvel Studios and distributed by Paramount Pictures. It is the sequel to 2008's Iron Man. The entire film revolves around the legacies of Howard Stark and Ivan Vanko. Tony is so focused on creating a legacy for Iron Man, and honouring his father's legacy, that he refuses to leave a legacy of his own.</p>
+    </div>
+  </div> 
+
+
+  <!-- Movie4 section -->
+<div class="container mx-auto flex py-10 md:flex-row flex-col items-center">
+    <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 flex justify-center">
+      <img class="object-cover object-center rounded h-[500px] hover:transform hover:scale-110 hover:shadow-2xl hover:shadow-white hover:transition-all" alt="hero" src="./movie4.jpeg">
+    </div>
+    <div class="lg:flex-grow md:w-1/2 lg:pl-10 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+      <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900"><span class="font-extrabold text-4xl">4.</span>
+          Thor 2012
+      </h1>
+      <p class="mb-8 leading-relaxed lg:text-2xl md:text-sm">In 2012, Odin sends Thor back to Earth using dark magic after learning Loki is alive and is attempting to conquer the Earth. He finds Loki on a Quinjet, held captive by Tony Stark, Steve Rogers, and Natasha Romanoff. Thor takes Loki away, hoping to convince him to abandon his plan.As the son of Odin (Anthony Hopkins), king of the Norse gods, Thor (Chris Hemsworth) will soon inherit the throne of Asgard from his aging father. However, on the day that he is to be crowned, Thor reacts with brutality when the gods' enemies, the Frost Giants, enter the palace in violation of their treaty.As the son of Odin (Anthony Hopkins), king of the Norse gods, Thor (Chris Hemsworth) will soon inherit the throne of Asgard from his aging father.</p>
+    </div>
+  </div>
+
+  <!-- Movie5 section -->
+<div class="container mx-auto flex py-10 md:flex-row flex-col items-center">
+    <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 flex justify-center">
+      <img class="object-cover object-center rounded h-[500px] hover:transform hover:scale-110 hover:shadow-2xl hover:shadow-white hover:transition-all" alt="hero" src="./movie5.jpg">
+    </div>
+    <div class="lg:flex-grow md:w-1/2 lg:pl-10 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+      <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900"><span class="font-extrabold text-4xl">5.</span>
+        Captain America: The First Avenger (2011)
+      </h1>
+      <p class="mb-8 leading-relaxed lg:text-2xl md:text-sm">Steve Rogers, a weak, sickly young man eager to fight is repeatedly rejected from the war-until a seemingly "crazy" scientist recruits him in a new experiment to turn the tides. He is transformed into the super soldier the world needs, but no one believes it.Captain America's civilian identity is Steve Rogers, a frail man enhanced to the peak of human physical perfection by an experimental "super-soldier serum" after joining the United States Army to aid the country's efforts in World War II.The First Avenger is a classic good vs evil action adventure story. It's based on a Marvel Comics character. It contains violent and disturbing scenes that make it unsuitable for younger children and teenagers. There's a strong pro-American message as can be expected in a 1940s setting.</p>
+    </div>
+  </div>  
+
+  <!-- Movie6 section -->
+<div class="container mx-auto flex py-10 md:flex-row flex-col items-center">
+    <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 flex justify-center">
+      <img class="object-cover object-center rounded h-[500px] hover:transform hover:scale-110 hover:shadow-2xl hover:shadow-white hover:transition-all" alt="hero" src="./movie6.jpg">
+    </div>
+    <div class="lg:flex-grow md:w-1/2 lg:pl-10 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+      <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900"><span class="font-extrabold text-4xl">6.</span>
+          The Avenger
+      </h1>
+      <p class="mb-8 leading-relaxed lg:text-2xl md:text-sm">The Avengers began as a group of extraordinary individuals who were assembled to defeat Loki and his Chitauri army in New York City. Since then, the team has expanded its roster and faced a host of new threats, while dealing with their own turmoil.Earth's mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from enslaving humanity.The Avengers is a fast-paced, relentless film that remains consistently entertaining over almost two and a half hours. There's always a great deal happening, and it manages to remain a breezy, engaging watch without feeling overstuffed or rushed.For the simple reason that it has combined marvel characters</p>
+    </div>
+  </div>  
+
+  
+
+   
+    
+
+    
+                       
+
+<!-- footer -->
+<footer class="text-gray-600 body-font bg-gray-700">
+  <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+    <div class="w-64 h-[100px] flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+      <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+        <img class="w-[130px] h-[130px]" src="./avg logo2transprant.png" alt="">
+      </a>
+    </div>
+    <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="title-font font-medium text-white tracking-widest text-lg mb-3">TEAM</h2>
+        <nav class="list-none mb-10">
+          <li>
+            <a href="" class="text-white hover:text-orange-500">Boss</a>
+          </li>
+          <li>
+            <a href="" class="text-white hover:text-orange-500">Super Heros</a>
+          </li>
+          <li>
+            <a href="" class="text-white hover:text-orange-500">Agents</a>
+          </li>
+          <li>
+            <a href="" class="text-white hover:text-orange-500">Devil</a>
+          </li>
+        </nav>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="title-font font-medium text-white tracking-widest text-lg mb-3">MOVIES</h2>
+        <nav class="list-none mb-10">
+          <li>
+            <a href="" class="text-white hover:text-orange-500">The Avenger</a>
+          </li>
+          <li>
+            <a href="" class="text-white hover:text-orange-500">Avenger age of ultron</a>
+          </li>
+          <li>
+            <a href="" class="text-white hover:text-orange-500">Avenger war of infinity</a>
+          </li>
+          <li>
+            <a href="" class="text-white hover:text-orange-500">Avenger End game</a>
+          </li>
+        </nav>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="title-font font-medium text-white tracking-widest text-lg mb-3">INFO</h2>
+        <nav class="list-none mb-10">
+          <li>
+            <a href="" class="text-white hover:text-orange-500">About Us</a>
+          </li>
+          <li>
+            <a href="" class="text-white hover:text-orange-500">Biography</a>
+          </li>
+          <li>
+            <a href="" class="text-white hover:text-orange-500">Adventure</a>
+          </li>
+          <li>
+            <a href="" class="text-white hover:text-orange-500">Support</a>
+          </li>
+        </nav>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="title-font font-medium text-white tracking-widest text-lg mb-3">CONTACT US</h2>
+        <nav class="list-none mb-10">
+          <li>
+            <a href="" class="text-white hover:text-orange-500">Avenger1122@gmail.com</a>
+          </li>
+          <li>
+            <a href="" class="text-white hover:text-orange-500">@Avengers_Offical.insta</a>
+          </li>
+          <li>
+            <a href="" class="text-white hover:text-orange-500">@fb.Avengers</a>
+          </li>
+          <li>
+            <a href="" class="text-white hover:text-orange-500">+1-65463546-12</a>
+          </li>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div class="bg-black text-white">
+    <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+      <p class=" text-lg text-center sm:text-left">@Web Designer @Avenger @ZM © All Right Reserved
+        <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank"></a>
+      </p>
+      <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+        <a href="" class="">
+          <i class="fa-brands fa-facebook text-[25px] hover:text-[#3b5998]"></i>
+        </a>
+        <a href="" class="ml-3 ">
+          <i class="fa-brands fa-twitter text-[25px] hover:text-[#1DA1F2]"></i>
+        </a>
+        <a href="" class="ml-3">
+          <i class="fa-brands fa-instagram text-[25px] hover:text-[#d62976]"></i>
+        </a>
+        <a href="" class="ml-3">
+          <i class="fa-brands fa-linkedin-in text-[25px] hover:text-[#0072b1]"></i>
+        </a>
+      </span>
+    </div>
+  </div>
+</footer>                         
+<script>
+    //  more button for sm md
+    $(document).ready(function(){
+        $('#btn').click(function(){
+            $('#hid').slideToggle();
+            abc();
+        });
+        function abc(){
+            var a= '<i class="fa-solid fa-xmark text-2xl"></i>';
+            var b= '<i class="fa-solid fa-bars text-2xl"></i>';
+            if($('#btn').html()===a)
+            {
+                $('#btn').html(b);
+            }
+            else{
+                $('#btn').html(a);
+            }
+        }
+    });
+
+    // drop down menu for lg
+    $(document).ready(function(){
+        $('#btn1').click(function(){
+          $('#hid1').slideToggle();
+          abc();
+        });
+        function abc(){
+            var b= '<i class="fa-solid fa-chevron-down"></i>';
+            var a= '<i class="fa-solid fa-chevron-up"></i>';
+            if($('#btn1').html()===a)
+            {
+                $('#btn1').html(b);
+            }
+            else{
+                $('#btn1').html(a);
+            }
+        }
+    });
+    //  drop down menu for sm
+    $(document).ready(function(){
+        $('#btn2').click(function(){
+          $('#hid2').slideToggle();
+          abc();
+        });
+        function abc(){
+            var b= '<i class="fa-solid fa-chevron-down"></i>';
+            var a= '<i class="fa-solid fa-chevron-up"></i>';
+            if($('#btn2').html()===a)
+            {
+                $('#btn2').html(b);
+            }
+            else{
+                $('#btn2').html(a);
+            }
+        }
+    });
+    
+</script>
+    </div>
+</body>
+</html>

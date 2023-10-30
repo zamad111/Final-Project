@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marval's Avenger</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="libary.js"></script>
+    <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+    .animation{
+            background: url(./avenger\ pic.jpg);
+            background-size: cover;
+            background-position: center;
+            animation-name: avenger;
+            animation-duration: 30s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-timing-function: step-end;      
+        }
+        #logo{
+            animation-name: logo;
+            animation-duration:5s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+           
+        }
+
+        @keyframes logo {
+            from{transform: rotate3d(0,1,0,0deg);}
+            to{transform: rotate3d(0,1,0,360deg);}
+           
+        }
+
+        @keyframes avenger{
+            0%{
+                background: url(./avenger\ pic.jpg);
+                background-size: cover;
+            }
+            10%{
+                background: url(./avenger1.jpg);
+                background-size: cover;
+            }
+            20%{
+                background: url(./avenger2.jpg);
+                background-size: cover;
+            }
+            30%{
+                background: url(./captain\ logo1.jpg);
+                background-size: cover;
+            }
+            40%{
+                background: url(./ironman1\ logo.jpg);
+                background-size: cover;
+            }
+            50%{
+                background: url(./thor\ logo1.jpg);
+                background-size: cover;
+            }
+            60%{
+                background: url(./hulk\ logo1.jpg);
+                background-size: cover;
+            }
+            70%{
+                background: url(./black\ wido\ logo.jpg);
+                background-size: cover;
+            }
+            80%{
+                background: url(./hawykelogo.jpg);
+                background-size: cover;
+            }
+            90%{
+                background: url(./loki\ logo1.jpg);
+                background-size: cover;
+            }
+        }
+    </style>
+</head>
+<body class="container mx-auto font-['Oswald'] italic tracking-wider">
+  <!-- main -->
+  <div class="container mx-auto w-full h-auto bg-gray-400">
+<!-- navbar -->
+<div class="h-[100px] w-full bg-gray-700 flex items-center justify-between px-3 pr-5  text-white">
+  <div class="logo"><a href="./index.html"><img class="w-[120px] h-[100px] hover:transform hover:scale-90 " id="logo" src="./avg logo2transprant.png" alt=""></a></div>
+  <div class=" hidden lg:flex items-center gap-[35px]">
+      <a href="./index.html" class="hover:underline text-[20px]">Home</a>
+      <div class="flex gap-1 items-center cursor-pointer"><a href="./team main.html" class="hover:underline text-[20px]">Team</a><div class="text-[13px] pl-1" id="btn1"><i class="fa-solid fa-chevron-down"></i></div>
+  </div>
+      <a href="./Movies.html" class="hover:underline text-[20px]">Movies</a>
+      <a href="./Devil.html" class="hover:underline text-[20px]">Devil</a>
+      <a href="./News _ Updates.html" class="hover:underline text-[20px]">News & Updates</a>
+  </div>
+ <div class="flex gap-[20px] items-center">
+  <a href="Sign in.html"><button class="hover:bg-white hover:text-[#696b72] hover:transform hover:scale-105 text-[18px] w-[90px] h-[45px] skew-x-[-20deg] bg-[#696b72]">Log in</button></a>
+  <a href="Sign up.html"><button class="hover:bg-white hover:text-[#696b72] hover:transform hover:scale-105 text-[18px] w-[90px] h-[45px] skew-x-[-20deg] bg-[#696b72]">Sign up</button></a>
+  <button class="lg:hidden" id="btn"><i class="fa-solid fa-bars text-2xl"></i></button>
+ </div>
+</div>
+
+  <!-- drop down menu for md sm -->
+  <div class="container hidden h-auto  bg-black text-white flex-col mx-auto absolute" id="hid">
+      <a href="./index.html" class="p-3  hover:bg-gray-400 block border-b-2 border-b-white">Home</a>
+      <button class="p-3 text-start flex items-center hover:bg-gray-400 w-full border-b-2 border-b-white"><a href="./team main.html">Team</a><div class="text-[13px] pl-1" id="btn2"><i class="fa-solid fa-chevron-down"></i></div></button>
+      <ul class=" hidden  w-[150px] bg-gray-700 text-white flex-col " id="hid2">
+      <a href="./@boss.html" class="p-3  hover:bg-gray-900 block border-b-2 border-b-white"><li>Boss</li></a>
+      <a href="./@captain.html" class="p-3  hover:bg-gray-900 block border-b-2 border-b-white"><li>Captain</li></a>
+      <a href="./@ironman.html" class="p-3  hover:bg-gray-900 block border-b-2 border-b-white"><li>Ironman</li></a>
+      <a href="./@thor.html" class="p-3  hover:bg-gray-900 block border-b-2 border-b-white"><li>Thor</li></a>
+      <a href="./@hulk.html" class="p-3  hover:bg-gray-900 block border-b-2 border-b-white"><li>Hulk</li></a>      
+      <a href="./@blackwidow.html" class="p-3  hover:bg-gray-900 block border-b-2 border-b-white"><li>Black Widow</li></a>      
+      <a href="./@clintbarton.html" class="p-3  hover:bg-gray-900 block border-b-2 border-b-white"><li>Clint Barton</li></a>
+      
+      </ul>
+      <a href="./Movies.html" class="p-3  hover:bg-gray-400 block border-b-2 border-b-white">Movies</a>
+      <a href="./Devil.html" class="p-3  hover:bg-gray-400 block border-b-2 border-b-white">Devil</a>
+      <a href="./News _ Updates.html" class="p-3  hover:bg-gray-400 block border-b-2 border-b-white">News & Updates</a>
+  </div>
+
+    <!-- sub menu for lg -->
+<div class="container left-[450px] hidden w-[120px] h-[350px] bg-black text-white flex-col mx-auto absolute" id="hid1">
+    <a href="./@boss.html" class="p-3  hover:bg-gray-400 block border-b-2 border-b-white">Boss</a>
+    <a href="./@captain.html" class="p-3  hover:bg-gray-400 block border-b-2 border-b-white">Captain</a>
+    <a href="./@ironman.html" class="p-3  hover:bg-gray-400 block border-b-2 border-b-white">Ironman</a>
+    <a href="./@thor.html" class="p-3  hover:bg-gray-400 block border-b-2 border-b-white">Thor</a>
+    <a href="./@hulk.html" class="p-3  hover:bg-gray-400 block border-b-2 border-b-white">Hulk</a>      
+    <a href="./@blackwidow.html" class="p-3  hover:bg-gray-400 block border-b-2 border-b-white">Black Widow</a>      
+    <a href="./@clintbarton.html" class="p-3  hover:bg-gray-400 block border-b-2 border-b-white">Clint Barton</a>    
+   </div>
+
+    <!-- landing page for home page -->
+    <div class="animation mx-auto aspect-video"></div>
+
+    <!-- Text div -->
+    <div class="container mx-auto" style=" background: url(./avg\ logo2.jpg); background-size: cover; background-position: center;">
+      <div class="w-full h-auto bg-white bg-opacity-60 p-20 flex flex-col gap-3 justify-center items-center text-lg ">
+        <h2 class="text-2xl font-bold">Who Avengers Are?</h2>
+        Earth's Mightiest Heroes stand as the planet's first line of defense against the most powerful threats in the universe. The Avengers began as a group of extraordinary individuals who were assembled to defeat Loki and his Chitauri army in New York City.The Avengers were a team of extraordinary individuals, with either superpowers or other special characteristics. Though primarily affiliated with the interests of the United States of America, the group's purpose was to protect global stability from inner or extraterrestrial threats.
+        <h2 class="text-2xl font-bold">Origin of Avengers</h2>
+        The Avengers began as a group of extraordinary individuals who were assembled to defeat Loki and his Chitauri army in New York City. Since then, the team has expanded its roster and faced a host of new threats, while dealing with their own turmoil.
+        <h2 class="text-2xl font-bold">First Six Avengers</h2>
+        The original Avengers team assembled in 2012's The Avengers, going on to appear in three more team-up movies, minus Hawkeye in Avengers: Infinity War. The original team memorably consisted of Captain America, Iron Man, Thor, Hulk, Black Widow, and Hawkeye.
+        <h2 class="text-2xl font-bold">Who made Avengers?</h2>
+        Sometimes there are threats too big for any one hero to combat. Stan Lee and Jack Kirby knew this. And so they created the Avengers, bringing Thor, Hulk, Iron Man and others together to form Earth's Mightiest Heroes.
+        <h2 class="text-2xl font-bold">The Avengers Initiative</h2>
+        In 1995, S.H.I.E.L.D. director Nick Fury creates the Avengers Initiative, envisioning it as a group of heroes working to respond to planetary threats, following the appearance of Carol Danvers and naming it after her U.S. Air Force callsign, "Avenger".Years later, Fury assesses various individuals for it, including Tony Stark and Steve Rogers.Stark's membership is declined after a negative report by S.H.I.E.L.D. agent Natasha Romanoff.The World Security Council wanted Emil Blonsky to join, but rejected it after Stark deters Thaddeus Ross from the idea, hiring Bruce Banner instead
+      </div>
+    </div>
+
+    <!-- videos -->
+    <div class="container pb-5 mx-auto bg-gray-400">
+      <div class="flex flex-wrap text-center justify-center items-center">
+        <div class="sm:w-full sm:mx-auto lg:w-full lg:mx-auto flex px-10 mb-10 justify-center items-center">
+          <video class="w-11/12 h-[600px] border-[2px] border-gray-500 bg-black" src="./y2mate.com - Marvels The Avengers Super Bowl XLVI Commercial Extended_360p.mp4" controls></video>
+        </div>
+      </div>
+    </div>
+ 
+
+<!-- footer -->
+<footer class="text-gray-600 body-font bg-gray-700">
+  <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+    <div class="w-64 h-[100px] flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+      <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+        <img class="w-[130px] h-[130px]" src="./avg logo2transprant.png" alt="">
+      </a>
+    </div>
+    <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="title-font font-medium text-white tracking-widest text-lg mb-3">TEAM</h2>
+        <nav class="list-none mb-10">
+          <li>
+            <a href="" class="text-white hover:text-orange-500">Boss</a>
+          </li>
+          <li>
+            <a href="" class="text-white hover:text-orange-500">Super Heros</a>
+          </li>
+          <li>
+            <a href="" class="text-white hover:text-orange-500">Agents</a>
+          </li>
+          <li>
+            <a href="" class="text-white hover:text-orange-500">Devil</a>
+          </li>
+        </nav>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="title-font font-medium text-white tracking-widest text-lg mb-3">MOVIES</h2>
+        <nav class="list-none mb-10">
+          <li>
+            <a href="" class="text-white hover:text-orange-500">The Avenger</a>
+          </li>
+          <li>
+            <a href="" class="text-white hover:text-orange-500">Avenger age of ultron</a>
+          </li>
+          <li>
+            <a href="" class="text-white hover:text-orange-500">Avenger war of infinity</a>
+          </li>
+          <li>
+            <a href="" class="text-white hover:text-orange-500">Avenger End game</a>
+          </li>
+        </nav>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="title-font font-medium text-white tracking-widest text-lg mb-3">INFO</h2>
+        <nav class="list-none mb-10">
+          <li>
+            <a href="" class="text-white hover:text-orange-500">About Us</a>
+          </li>
+          <li>
+            <a href="" class="text-white hover:text-orange-500">Biography</a>
+          </li>
+          <li>
+            <a href="" class="text-white hover:text-orange-500">Adventure</a>
+          </li>
+          <li>
+            <a href="" class="text-white hover:text-orange-500">Support</a>
+          </li>
+        </nav>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="title-font font-medium text-white tracking-widest text-lg mb-3">CONTACT US</h2>
+        <nav class="list-none mb-10">
+          <li>
+            <a href="" class="text-white hover:text-orange-500">Avenger1122@gmail.com</a>
+          </li>
+          <li>
+            <a href="" class="text-white hover:text-orange-500">@Avengers_Offical.insta</a>
+          </li>
+          <li>
+            <a href="" class="text-white hover:text-orange-500">@fb.Avengers</a>
+          </li>
+          <li>
+            <a href="" class="text-white hover:text-orange-500">+1-65463546-12</a>
+          </li>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div class="bg-black text-white">
+    <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+      <p class=" text-lg text-center sm:text-left">@Web Designer @Avenger @ZM © All Right Reserved
+        <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank"></a>
+      </p>
+      <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+        <a href="" class="">
+          <i class="fa-brands fa-facebook text-[25px] hover:text-[#3b5998]"></i>
+        </a>
+        <a href="" class="ml-3 ">
+          <i class="fa-brands fa-twitter text-[25px] hover:text-[#1DA1F2]"></i>
+        </a>
+        <a href="" class="ml-3">
+          <i class="fa-brands fa-instagram text-[25px] hover:text-[#d62976]"></i>
+        </a>
+        <a href="" class="ml-3">
+          <i class="fa-brands fa-linkedin-in text-[25px] hover:text-[#0072b1]"></i>
+        </a>
+      </span>
+    </div>
+  </div>
+</footer>  
+    </div>
+    <script>
+        //  more button for sm md
+        $(document).ready(function(){
+            $('#btn').click(function(){
+                $('#hid').slideToggle();
+                abc();
+            });
+            function abc(){
+                var a= '<i class="fa-solid fa-xmark text-2xl"></i>';
+                var b= '<i class="fa-solid fa-bars text-2xl"></i>';
+                if($('#btn').html()===a)
+                {
+                    $('#btn').html(b);
+                }
+                else{
+                    $('#btn').html(a);
+                }
+            }
+        });
+
+        // drop down menu for lg
+        $(document).ready(function(){
+            $('#btn1').click(function(){
+              $('#hid1').slideToggle();
+              abc();
+            });
+            function abc(){
+                var b= '<i class="fa-solid fa-chevron-down"></i>';
+                var a= '<i class="fa-solid fa-chevron-up"></i>';
+                if($('#btn1').html()===a)
+                {
+                    $('#btn1').html(b);
+                }
+                else{
+                    $('#btn1').html(a);
+                }
+            }
+        });
+        //  drop down menu for sm
+        $(document).ready(function(){
+            $('#btn2').click(function(){
+              $('#hid2').slideToggle();
+              abc();
+            });
+            function abc(){
+                var b= '<i class="fa-solid fa-chevron-down"></i>';
+                var a= '<i class="fa-solid fa-chevron-up"></i>';
+                if($('#btn2').html()===a)
+                {
+                    $('#btn2').html(b);
+                }
+                else{
+                    $('#btn2').html(a);
+                }
+            }
+        });
+        
+    </script>
+
+</body>
+</html>
